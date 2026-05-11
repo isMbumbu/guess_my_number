@@ -1,8 +1,13 @@
+import { router } from "expo-router";
 import React from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 import { colors } from "../../themes/colors";
 
 const Home = () => {
+  function handlePress() {
+    router.push("/startGame");
+  }
+
   return (
     <View style={styles.container}>
       {/* Header */}
@@ -13,7 +18,7 @@ const Home = () => {
 
       {/* Game Button */}
       <Pressable
-        onPress={() => console.log("Tapped!")}
+        onPress={handlePress}
         style={({ pressed }) => [
           styles.button,
           pressed && styles.buttonPressed,
@@ -21,7 +26,7 @@ const Home = () => {
       >
         {({ pressed }) => (
           <Text style={styles.buttonText}>
-            {pressed ? "Checking..." : "Start Guessing"}
+            {pressed ? "Starting..." : "Start Guessing"}
           </Text>
         )}
       </Pressable>
@@ -30,6 +35,7 @@ const Home = () => {
 };
 
 export default Home;
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
