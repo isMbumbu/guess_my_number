@@ -2,7 +2,7 @@
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Get started
+## Run the app
 
 1. Install dependencies
 
@@ -10,11 +10,18 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npm install
    ```
 
-2. Start the app
+2. Start Expo
 
    ```bash
-   npx expo start
+   npm run start
    ```
+
+3. Choose a platform from the Metro/Expo prompt:
+
+- Web: `npm run web`
+- Android: `npm run android`
+- iOS: `npm run ios`
+- (Optional) Run with Expo Go: press `w` (web) or use the QR code from `npx expo start`.
 
 In the output, you'll find options to open the app in a
 
