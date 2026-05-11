@@ -1,57 +1,54 @@
-# Welcome to your Expo app 👋
+# Higher or Lower
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A sleek, interactive "Higher or Lower" number guessing game built with **React Native** and **Expo**. Test your intuition and see how long you can keep your streak alive!
 
-## Run the app
+---
 
-1. Install dependencies
+## Game Logic
+
+- **The Start:** You are presented with a starting number between 1 and 100.
+- **The Goal:** Predict if the next hidden number is **Higher** or **Lower**.
+- **The Streak:** If you guess correctly, the hidden number becomes the new displayed number, your score goes up, and a new secret number is generated.
+- **Game Over:** One wrong move and the game ends! Reset to try and beat your high score.
+
+## Getting Started
+
+1. **Install Dependencies**
 
    ```bash
    npm install
+
    ```
 
-2. Start Expo
+2. **Start Game**
 
    ```bash
-   npm run start
+   npx expo start
+
    ```
 
-3. Choose a platform from the Metro/Expo prompt:
+3. **Open on Device**
+   - Scan the QR code with **Expo Go** (Android) or your **Camera** (iOS).
+   - Press `i` for iOS Simulator or `a` for Android Emulator.
 
-- Web: `npm run web`
-- Android: `npm run android`
-- iOS: `npm run ios`
-- (Optional) Run with Expo Go: press `w` (web) or use the QR code from `npx expo start`.
+## Tech Stack
 
-In the output, you'll find options to open the app in a
+- **Framework:** [Expo](https://expo.dev/) (React Native)
+- **Language:** TypeScript (Strictly typed, no `any`)
+- **Theme:** Custom centralized color palette for easy UI branding.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Folder Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- `app/` - Contains the main game screens and file-based routing.
+- `themes/` - UI design tokens like colors and spacing.
+- `assets/` - Game icons and splash screens.
 
-## Get a fresh project
+## Key Features
 
-When you're ready, run:
+- **Smart Randomization:** Logic ensures the next number is never identical to the current one.
+- **Strict Typing:** Robust TypeScript implementation for cleaner, bug-free code.
+- **Haptic Feedback Ready:** Clean UI with clear success/failure messaging.
 
-```bash
-npm run reset-project
-```
+---
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+**Enjoy the game!**
